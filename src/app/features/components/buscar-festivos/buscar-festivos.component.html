@@ -1,0 +1,12 @@
+<mat-toolbar class="mat-warn">
+    <div class="titleCRUD">Buscar festivos por año</div>
+</mat-toolbar>
+<div>
+    <mat-form-field>
+        <input matInput type="string" placeholder="Año" [(ngModel)]="year">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="buscar()">Obtener Festivos</button>
+</div>
+<div>
+    <ngx-datatable class="dark" [rows]="festivos" [columns]="columnas" [rowHeight]="'auto'" [columnMode]="modoColumna.force" [limit]="10" [selectionType]="tipoSeleccion.single" [headerHeight]="50" [footerHeight]="50"></ngx-datatable>
+</div>
