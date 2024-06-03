@@ -1,3 +1,9 @@
+# UdeA - Programming and Laboratory Techniques
+## Students:
+
+[Valentina Roldán Preciado](https://github.com/Roldan21)
+[Cristian Yovanny Jimenez Duque](https://github.com/cristianyovanny)
+
 # Holidays
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
