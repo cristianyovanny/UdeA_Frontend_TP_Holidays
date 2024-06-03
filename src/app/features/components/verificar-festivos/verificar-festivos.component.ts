@@ -2,9 +2,6 @@ import { Component } from '@angular/core';
 import { ReferenciasMaterialModule } from '../../../shared/modules/referencias-material.module';
 import { FormsModule } from '@angular/forms';
 import { VerificarFestivosService } from '../../services/verificar-festivos.service';
-import { Festivos } from '../../../core/entidades/Festivos';
-import { MatDialog } from '@angular/material/dialog';
-import { ModalFestivoService } from '../../services/modal-festivo.service';
 
 @Component({
   selector: 'app-verificar-festivos',
@@ -20,7 +17,6 @@ export class VerificarFestivosComponent {
   public fechaSeleccionada: any;
   constructor(
     private servicio:VerificarFestivosService,
-    private servicioModal: ModalFestivoService
   ) { }
   
   verificar(){
