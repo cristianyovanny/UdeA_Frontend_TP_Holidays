@@ -1,1 +1,16 @@
-<p>verificar-festivos works!</p>
+<mat-toolbar class="mat-warn">
+    <div class="titleCRUD">Verificar festivos por fecha</div>
+</mat-toolbar>
+<div>
+    <mat-form-field>
+        <mat-label>Ingresa la fecha</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="fechaSeleccionada">
+        <!-- <mat-hint>AAAA/MM/DD</mat-hint> -->
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="verificar()">Verificar Festivos</button>
+</div>
+<div>
+    
+</div>

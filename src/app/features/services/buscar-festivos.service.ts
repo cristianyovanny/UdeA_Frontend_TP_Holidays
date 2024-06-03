@@ -7,8 +7,8 @@ import { Festivos } from '../../core/entidades/Festivos';
 @Injectable({
   providedIn: 'root'
 })
-export class FestivosService {
-  
+export class BuscarFestivosService {
+
   public url: string;
 
   constructor(private http: HttpClient) {

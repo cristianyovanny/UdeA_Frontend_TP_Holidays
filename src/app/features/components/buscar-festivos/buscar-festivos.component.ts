@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ReferenciasMaterialModule } from '../../../shared/moduls/referencias-material.module';
+import { ReferenciasMaterialModule } from '../../../shared/modules/referencias-material.module';
 import { Festivos } from '../../../core/entidades/Festivos';
 import { FormsModule } from '@angular/forms';
 import { ColumnMode, NgxDatatableModule, SelectionType } from '@swimlane/ngx-datatable';
-import { FestivosService } from '../../services/festivos.service';
+import { BuscarFestivosService } from '../../services/buscar-festivos.service';
 
 @Component({
   selector: 'app-buscar-festivos',
@@ -26,7 +26,7 @@ export class BuscarFestivosComponent {
   public modoColumna=ColumnMode;
   public tipoSeleccion = SelectionType;
   
-  constructor(private servicio:FestivosService) {
+  constructor(private servicio:BuscarFestivosService) {
     this.listar()
   }
 

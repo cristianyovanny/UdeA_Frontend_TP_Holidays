@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { ReferenciasMaterialModule } from './shared/moduls/referencias-material.module';
+import { ReferenciasMaterialModule } from './shared/modules/referencias-material.module';
 import { routes } from './app.routes';
 
 @Component({
